@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linija 94: Praćenje Polazaka po Bloku (Vercel)</title>
+    
+    <style>
+        body { font-family: sans-serif; margin: 20px; background-color: #f4f4f4; }
+        header { background-color: #004d99; color: white; padding: 15px; text-align: center; margin-bottom: 20px; }
+        h1, h2, h3 { color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; background-color: white; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #e0e0e0; }
+        #status-poruka { font-weight: bold; margin-bottom: 15px; color: #cc0000; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🚌 Praćenje Linije <span id="broj-linije"></span></h1>
+        <p>Ažuriranje u realnom vremenu</p>
+    </header>
+
+    <main>
+        
+        <section id="status-sekcija">
+            <h2>Status Učitavanja</h2>
+            <div id="status-poruka">Čekam na učitavanje JavaScripta...</div>
+        </section>
+
+        <section id="tabela-polazaka">
+            <h3>Polasci po Bloku (Linija 94)</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Blok (Red. br. polaska)</th>
+                        <th>ID Vozila</th>
+                        <th>Smer</th>
+                        <th>Planirano Vreme Polaska</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-polazaka">
+                    <tr><td colspan="4">JavaScript će ovde učitati podatke...</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Poslednje ažuriranje: <span id="last-updated">Automatski svakih 30 sekundi.</span></p>
+    </footer>
+
+    <script src="94.js"></script>
+
+</body>
+</html>
